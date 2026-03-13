@@ -1,46 +1,222 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Maya Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<title>Mohankumar Portfolio</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#222;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+nav{
+background:#444;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:40px;
+}
+
+.container{
+width:80%;
+margin:auto;
+background:white;
+padding:30px;
+margin-top:20px;
+border-radius:10px;
+}
+
+h2{
+color:#333;
+border-bottom:2px solid #ddd;
+padding-bottom:10px;
+}
+
+ul{
+line-height:1.8;
+}
+
+.skills span{
+background:#007bff;
+color:white;
+padding:6px 12px;
+margin:5px;
+display:inline-block;
+border-radius:5px;
+}
+
+button{
+background:#28a745;
+color:white;
+border:none;
+padding:10px 20px;
+cursor:pointer;
+margin-top:10px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>MOHANKUMAR S</h1>
-    <p>Embedded Developer | Arduino | IoT</p>
+<h1>MOHANKUMAR S</h1>
+<p>Coding and Robotics Trainer</p>
+<p>Phone: 6383518080 | Email: mohankumar211033@gmail.com</p>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>I am an embedded developer with experience in Arduino and IoT projects.</p>
+<nav>
+<a href="#profile">Profile</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="profile">
+<div class="container">
+<h2>Profile</h2>
+
+<p>
+Adaptable and motivated MCA graduate with 3 years of experience as a Coding and Robotics trainer. Skilled in communication, problem-solving, and analytical thinking. Passionate about technology, robotics, and programming.
+</p>
+
+<button onclick="showMessage()">Click to Know More</button>
+<p id="demo"></p>
+
+</div>
 </section>
 
-<section>
-    <h2>Projects</h2>
+<section id="experience">
+<div class="container">
 
-    <h3>Smart Light IoT</h3>
-    <p>Control lights using a web interface.</p>
+<h2>Professional Experience</h2>
 
-    <h3>ESP32 Robot Car</h3>
-    <p>Robot car controlled using mobile browser.</p>
+<h3>Coding and Robotics Trainer (2023 – Present)</h3>
 
+<ul>
+<li>Conduct coding and robotics classes for students.</li>
+<li>Manage student enrollments and parent communication.</li>
+<li>Maintain CRM system for student records.</li>
+<li>Coordinate with school principals and staff.</li>
+<li>Organized two science expos with 140+ student projects.</li>
+</ul>
+
+<h3>Internship – Rane Madras Limited</h3>
+
+<ul>
+<li>Worked on IT Service Request Mobile Application.</li>
+<li>Designed and developed front-end UI.</li>
+<li>Improved usability and interface design.</li>
+</ul>
+
+</div>
 </section>
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Arduino</li>
-        <li>Embedded C</li>
-        <li>HTML CSS JavaScript</li>
-    </ul>
+<section id="education">
+<div class="container">
+
+<h2>Education</h2>
+
+<ul>
+<li>MCA – Sacred Heart College (67%) – 2021 to 2023</li>
+<li>BCA – Sri Vidy Mandir Arts and Science College (83%) – 2018 to 2021</li>
+</ul>
+
+</div>
 </section>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: mohankumar211033@gmail.com</p>
+<section id="skills">
+<div class="container">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<span>IoT</span>
+<span>Embedded C</span>
+<span>Python</span>
+<span>Web Development</span>
+<span>MongoDB</span>
+<span>MySQL</span>
+<span>Blockly Programming</span>
+<span>Data Science</span>
+
+</div>
+
+</div>
 </section>
+
+<section id="projects">
+<div class="container">
+
+<h2>Projects</h2>
+
+<h3>Online Sports Registration Application</h3>
+<p>Developed a web application to manage sports event registrations for a university.</p>
+
+<h3>IT Service Request Mobile Application</h3>
+<p>Designed front-end interface during internship.</p>
+
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+
+<h2>Contact</h2>
+
+<p><b>Name:</b> Mohankumar S</p>
+<p><b>Phone:</b> 6383518080</p>
+<p><b>Email:</b> mohankumar211033@gmail.com</p>
+
+</div>
+</section>
+
+<footer>
+
+<p>© 2026 Mohankumar Portfolio</p>
+
+</footer>
+
+<script>
+
+function showMessage(){
+
+document.getElementById("demo").innerHTML =
+"I have 3+ years experience in Coding, Robotics, Arduino, and Programming training.";
+
+}
+
+</script>
 
 </body>
 </html>
